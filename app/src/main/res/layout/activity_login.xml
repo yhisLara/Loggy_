@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggyActivity">
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_above="@+id/btnLog"
+        android:layout_alignEnd="@+id/btnLog"
+        android:layout_marginBottom="108dp" />
+    <Switch
+        android:id="@+id/SRemember"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/btnLog"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="32dp" />
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:layout_above="@+id/editTextPass"
+        android:layout_marginBottom="42dp"
+        android:layout_alignStart="@+id/editTextPass"
+        android:layout_alignEnd="@+id/editTextPass" />
+
+</RelativeLayout>
